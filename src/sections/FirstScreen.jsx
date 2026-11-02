@@ -57,7 +57,7 @@ export default function FirstScreen({ onPick }) {
         <button className="path" onClick={() => onPick("fe")}>
           <small>[2] app.jsx</small>
           <b>Frontend Dev</b>
-          <span>React and Angular work, real-time MQTT dashboards, Figma to reusable components.</span>
+          <span>React work, real-time MQTT dashboards, Figma to reusable components.</span>
         </button>
       </div>
     </div>

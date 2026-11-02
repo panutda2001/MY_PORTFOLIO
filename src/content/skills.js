@@ -7,7 +7,7 @@ export const SKILLS = {
     file: "package.json",
     rows: [
       { key: "design", items: ["Figma", "Wireframing", "Prototyping", "Design systems"] },
-      { key: "frontend", items: ["React", "Angular", "JavaScript ES6+", "HTML/CSS", "Responsive"] },
+      { key: "frontend", items: ["React", "JavaScript ES6+", "HTML/CSS", "Responsive"] },
       { key: "realtime", items: ["MQTT", "Node-RED"] },
       { key: "workflow", items: ["Git", "GitHub", "Figma to code"] },
       // Keep only what you are really learning:
@@ -21,7 +21,7 @@ export const SKILLS = {
       { key: "visual", items: ["Layout", "Typography", "Visual hierarchy", "Branding"] },
       { key: "tools", items: ["Figma", "Canva", "Photoshop", "Google Stitch"] },
       { key: "ai", items: ["ChatGPT", "Gemini", "Claude"] },
-      { key: "handoff", items: ["HTML/CSS", "React", "Angular"], note: "I can build what I design" },
+      { key: "handoff", items: ["HTML/CSS", "React"], note: "I can build what I design" },
     ],
   },
 };

@@ -9,7 +9,7 @@ export const GIT_LOG = [
     type: "feat(frontend)",
     title: "Technology Development Assistant, KMCE",
     bullets: [
-      "React company site; designed and contributed code to Angular real-time dashboards (MQTT)",
+      "React company site; designed and contributed code to real-time dashboards (MQTT)",
       "Figma to reusable components; Node-RED alerts for the ops team",
     ],
   },

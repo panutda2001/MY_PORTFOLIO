@@ -33,10 +33,10 @@ export const MODES = {
 
   // -------------------------------------------------------- Frontend path
   fe: {
-    eyebrow: "// Frontend Developer · React + Angular",
+    eyebrow: "// Frontend Developer · React ",
     headline: "Build it.<br><em>Ship it.</em>",
     intro:
-      "I build responsive web interfaces in React and Angular for real-time MQTT data, and turn Figma designs into reusable components. I design too, so handoff is easy.",
+      "I build responsive web interfaces in React for real-time MQTT data, and turn Figma designs into reusable components. I design too, so handoff is easy.",
     codeCard: `const panutda = {
   role:      ["Frontend", "UI engineering"],
   worksWith: "engineers + designers",
@@ -48,7 +48,7 @@ export const MODES = {
     about: {
       text: "I work between design and engineering at a smart-energy and EV-charging company, so the UI code I write stays true to the design. I like making real-time data feel simple.",
       role: "Frontend Developer",
-      focus: "React, Angular, responsive UI, MQTT data",
+      focus: "React, responsive UI, MQTT data",
       openTo: "Junior frontend / UI developer roles",
       resumeLabel: "Download resume (Frontend, PDF)",
       resumeFile: "Panutda_Wongsa_Resume_Frontend.pdf",
