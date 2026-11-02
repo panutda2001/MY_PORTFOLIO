@@ -1,0 +1,25 @@
+/* ======================================================================
+   GIT LOG: experience timeline written like commits (+ scroll-in animation).
+   ====================================================================== */
+
+.log{border-left:2px solid var(--line);margin-left:6px}
+
+.commit{position:relative;padding:0 0 30px 28px}
+
+.commit::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+
+.commit .h{font:600 13px var(--mono);color:var(--mute)}
+
+.commit .h b{color:var(--pink)}
+
+.commit h3{font-size:22px;margin:6px 0 8px}
+
+.commit ul{margin:0;padding-left:18px;color:var(--mute);font-size:16px}
+
+.rv{opacity:0;transform:translateY(34px);transition:opacity .6s,transform .6s}
+
+.rv.in{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+}

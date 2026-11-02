@@ -1,0 +1,23 @@
+/* ======================================================================
+   PIXEL AVATAR: bobbing, blinking and jumping animation of the pixel character.
+   ====================================================================== */
+
+.av{animation:hop 1.4s steps(1) infinite}
+
+.av.hop{animation:jump .5s steps(5) 1}
+
+.eo{animation:bo 4.5s steps(1) infinite}
+
+.ec{visibility:hidden;animation:bc 4.5s steps(1) infinite}
+
+@keyframes hop{0%{transform:none}50%{transform:translateY(-3px)}}
+
+@keyframes jump{0%,100%{transform:none}50%{transform:translateY(-22px)}}
+
+@keyframes bo{0%,93%,100%{visibility:visible}94%,97%{visibility:hidden}}
+
+@keyframes bc{0%,93%,100%{visibility:hidden}94%,97%{visibility:visible}}
+
+@media(prefers-reduced-motion:reduce){
+  .av,.eo,.ec{animation:none}
+}
