@@ -65,3 +65,4 @@ Frames are fixed 16:10 landscape and crop pictures to fill.
 - `nextUp` in `src/content/skills.js`: keep only what you are really learning.
 - Replace the resume PDFs when your resume changes.
 # MY_PORTFOLIO
+# MY_PORTFOLIO
