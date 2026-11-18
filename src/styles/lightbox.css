@@ -1,0 +1,9 @@
+/* ======================================================================
+   LIGHTBOX: full-screen image viewer when you click an image.
+   ====================================================================== */
+
+.lb{position:fixed;inset:0;background:rgba(5,5,25,.9);display:none;align-items:center;justify-content:center;z-index:120;padding:24px}
+
+.lb.on{display:flex}
+
+.lb img{max-width:100%;max-height:100%;border-radius:12px}

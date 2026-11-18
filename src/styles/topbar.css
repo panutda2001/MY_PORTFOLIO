@@ -1,0 +1,33 @@
+/* ======================================================================
+   TOP BAR: sticky menu at the top (logo, links, mode / dev / theme buttons).
+   ====================================================================== */
+
+.topbar{position:fixed;top:0;left:0;right:0;z-index:70;padding-top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--bg) 86%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1.5px solid var(--ink)}
+
+.pt{padding-top:68px}
+
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;font:600 14px var(--mono)}
+
+.logo{text-decoration:none;color:var(--ink)!important}
+
+.bar nav a{white-space:nowrap;padding-bottom:3px;border-bottom:2px solid transparent}
+
+.bar nav a.on{color:var(--ink);border-bottom-color:var(--accent)}
+
+.bar nav{display:flex;gap:18px;flex-wrap:wrap}
+
+.bar a{text-decoration:none;color:var(--mute)}
+
+.bar a:hover{color:var(--ink)}
+
+.tools{display:flex;gap:10px;align-items:center}
+
+.chip{font:600 13px var(--mono);border:1.5px solid var(--ink);background:transparent;color:var(--ink);padding:7px 12px;border-radius:999px;cursor:pointer}
+
+.chip[aria-pressed="true"]{background:var(--pink);border-color:var(--pink);color:#fff}
+
+@media(max-width:820px){
+  .bar{flex-wrap:wrap;gap:6px 12px}
+  .bar nav{order:3;width:100%;overflow-x:auto;flex-wrap:nowrap;gap:16px;font-size:12px}
+  .pt{padding-top:104px}
+}

@@ -1,0 +1,19 @@
+/* Styles are split by page section. Each file starts with a comment saying which part of the page it controls. */
+@import "./base.css";
+@import "./section-layout.css";
+@import "./buttons.css";
+@import "./speech-bubble.css";
+@import "./code-block.css";
+@import "./pixel-avatar.css";
+@import "./image-frame.css";
+@import "./topbar.css";
+@import "./first-screen.css";
+@import "./hero.css";
+@import "./work.css";
+@import "./folder-popup.css";
+@import "./design-to-code.css";
+@import "./git-log.css";
+@import "./skills.css";
+@import "./contact.css";
+@import "./floating-avatar.css";
+@import "./lightbox.css";

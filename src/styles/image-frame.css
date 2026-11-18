@@ -1,0 +1,17 @@
+/* ======================================================================
+   IMAGE FRAME: fixed 16:10 landscape frame for screenshots (image is cropped to fill).
+   ====================================================================== */
+
+.shot{position:relative;display:block;width:100%;aspect-ratio:16/10;cursor:pointer;background:var(--bg);overflow:hidden;border:0;padding:0}
+
+.shot.sq{aspect-ratio:16/10;border-radius:10px}
+
+.shot svg{width:100%;height:100%;display:block}
+
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+.shot .hint{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--ink);color:var(--bg);font:600 11px var(--mono);padding:6px 10px;border-radius:999px;white-space:nowrap}
+
+.shot.has .hint{display:none}
+
+.shot.static{cursor:default}

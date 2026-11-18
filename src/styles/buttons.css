@@ -1,0 +1,9 @@
+/* ======================================================================
+   BUTTONS: the .btn and .btn.p (primary) styles used across the page.
+   ====================================================================== */
+
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;font-family:inherit}
+
+.btn.p{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);box-shadow:5px 5px 0 var(--ink)}
+
+.btn.p:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}

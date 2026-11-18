@@ -1,0 +1,93 @@
+/* ======================================================================
+   WORK: project cards, browser/phone mockups, screens strip, code+alert split, case-study details.
+   ====================================================================== */
+
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+
+.card{background:var(--panel);border:1.5px solid var(--ink);border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:18px;transition:transform .25s,box-shadow .25s}
+
+.card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--accent)}
+
+.card.big{grid-column:1/-1;display:grid;grid-template-columns:1.25fr 1fr;gap:26px}
+
+.stage{position:relative;padding:26px;border-radius:14px;background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 22%,var(--bg)),color-mix(in srgb,var(--pink) 16%,var(--bg)));overflow:hidden;min-height:230px;display:flex;align-items:center}
+
+.bro{width:84%;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 24px 40px -18px rgba(10,10,43,.5);transition:transform .3s}
+
+.bro .tb{display:flex;gap:5px;padding:8px 10px;border-bottom:1px solid var(--line)}
+
+.bro .tb i{width:8px;height:8px;border-radius:50%;background:var(--line)}
+
+.pho{position:absolute;right:4%;bottom:-8%;width:38%;min-width:120px;background:var(--panel);border:3px solid var(--ink);border-radius:10px;overflow:hidden;box-shadow:0 24px 40px -14px rgba(10,10,43,.55);transition:transform .3s}
+
+.card:hover .bro{transform:translateY(-6px) rotate(-1deg)}
+
+.card:hover .pho{transform:translateY(-10px) rotate(2deg)}
+
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;width:100%}
+
+.body h3{font-size:22px;letter-spacing:0;margin-bottom:6px}
+
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 12px}
+
+.tags span{font:600 12px var(--mono);padding:4px 9px;border-radius:6px;background:color-mix(in srgb,var(--accent) 16%,transparent);color:var(--ink)}
+
+details{border-top:1px dashed var(--line);padding-top:12px}
+
+summary{cursor:pointer;font:600 14px var(--mono);color:var(--accent);list-style:none}
+
+summary::before{content:"$ ";color:var(--mute)}
+
+dl{display:grid;grid-template-columns:84px 1fr;gap:6px 14px;margin:14px 0 4px;font-size:15.5px}
+
+dt{font:600 13px var(--mono);color:var(--pink)}
+
+dd{margin:0}
+
+.lk{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-weight:600}
+
+@media(max-width:820px){
+  .pho{position:relative;right:auto;bottom:auto;margin:-30px 0 0 auto;width:48%}
+  .stage{display:block}
+  .bro{width:100%}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .card,.bro,.pho{transition:none}
+}
+
+.split{display:grid;grid-template-columns:1.15fr 1fr;gap:12px;width:100%;align-items:stretch}
+
+.alertshot{display:flex;flex-direction:column;gap:6px;min-width:0}
+
+.alertshot .cap{font:600 11px var(--mono);color:var(--ink)}
+
+.alertshot .shot,.alertshot .shot.sq{flex:none;aspect-ratio:16/10;border-radius:10px;border:1px solid var(--line)}
+
+@media(max-width:820px){
+  .split{grid-template-columns:1fr}
+}
+
+.card.big.stack{grid-template-columns:1fr}
+
+.dc{margin:0}
+
+.dc .pane{display:flex;flex-direction:column}
+
+.dc .pane .shot{flex:none;aspect-ratio:16/10;border-radius:12px;border:1px solid var(--line)}
+
+.stage.ph{aspect-ratio:16/10;min-height:0;padding:34px 16px 16px;align-items:stretch}
+
+.ph-chip{position:absolute;right:12px;top:10px;font:600 11px var(--mono);background:var(--ink);color:var(--bg);padding:4px 10px;border-radius:999px;z-index:2}
+
+.strip{display:flex;gap:16px;overflow-x:auto;overflow-y:hidden;width:100%;height:100%;scroll-snap-type:x proximity;padding-bottom:4px;scrollbar-width:thin}
+
+.scr{display:flex;flex-direction:column;align-items:center;gap:6px;flex:none;height:100%;border:0;background:none;padding:0;cursor:zoom-in;color:var(--ink);scroll-snap-align:start}
+
+.scr img{height:calc(100% - 22px);width:auto;display:block;border-radius:14px;border:1.5px solid var(--ink);box-shadow:5px 5px 0 color-mix(in srgb,var(--ink) 25%,transparent)}
+
+.scr span{font:600 11px var(--mono);white-space:nowrap}
+
+.scr:hover img{transform:translateY(-3px)}
+
+.scr img{transition:transform .2s}
