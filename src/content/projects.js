@@ -51,7 +51,6 @@ export const PROJECTS = [
     },
     outcome: "Handed off to the dev team to implement on top of the existing app.",
     links: [
-      // { label: "Open Figma", href: "https://www.figma.com/design/JmjuBDPxhBanpzzv9mLsUl/Smart-Energy-KMCE?node-id=0-1" },
     ],
   },
   {

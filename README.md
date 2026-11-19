@@ -1,4 +1,18 @@
-# Panutda Wongsa – Portfolio (React + Vite)
+# Panutda Wongsa — Portfolio
+
+Personal portfolio site built with **React + Vite**. Visitors pick a path — **UX/UI Design** or **Frontend Development** — and the hero, project cards, skills and resume download change to match.
+
+**Highlights**
+- Two content "modes" driven by plain data files, so text and projects change without touching components
+- Case-study cards with different visual layouts (browser mockup, phone-screen strip, code + alert screenshot, folder gallery)
+- Interactive extras: a live color picker that shows the Figma-token → CSS hand-off, a "git log" style experience timeline, a draggable pixel avatar
+- Light/dark theme, responsive layout, no UI framework (plain CSS per section)
+
+**Related work:** [KIT-WISe Energy website](https://github.com/kitmeechai01/KIT-WISe_Energy) · [IoT device alert automation](https://github.com/panutda2001/iot-alert-automation)
+
+---
+
+## Editing guide
 
 ```bash
 npm install
@@ -64,5 +78,3 @@ Frames are fixed 16:10 landscape and crop pictures to fill.
 - Mask customer names, UUIDs and channel names in alert screenshots.
 - `nextUp` in `src/content/skills.js`: keep only what you are really learning.
 - Replace the resume PDFs when your resume changes.
-# MY_PORTFOLIO
-# MY_PORTFOLIO
